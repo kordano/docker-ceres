@@ -19,5 +19,5 @@ Fill in twitter credentials in `opt/start-ceres` on the local machine where dock
 
 Run it
 ```
-docker run -t -i -link mongodb:db -name shelf -p 8082:8082 <username>/ceres
+docker run -t -i -link mongodb:db -name ceres -p 8082:8082 <username>/ceres
 ```
