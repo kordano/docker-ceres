@@ -3,4 +3,4 @@ export TWITTER_API_KEY=""
 export TWITTER_API_SECRET=""
 export TWITTER_ACCESS_TOKEN=""
 export TWITTER_ACCESS_TOKEN_SECRET=""
-/opt/build-ceres; java -jar /opt/ceres/target/ceres-standalone.jar
+/opt/build-ceres; java -jar /opt/ceres/target/ceres-standalone.jar 8082 prod
