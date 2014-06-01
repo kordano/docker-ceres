@@ -28,9 +28,6 @@ RUN git clone https://github.com/kordano/ceres.git /opt/ceres
 # define port
 EXPOSE 8082
 
-# get js files
-RUN /opt/install-deps
-
 # create uberjar with leiningen
 RUN /opt/build-ceres
 
