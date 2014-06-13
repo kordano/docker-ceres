@@ -4,6 +4,8 @@
 wget http://fb.me/react-0.9.0.min.js -P /opt/ceres/resources/public/static/react/
 wget https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip -P /opt/ceres/resources/public/static/bootstrap/
 wget http://code.jquery.com/jquery-1.11.0.min.js -P /opt/ceres/resources/public/static/jquery
+wget https://github.com/mbostock/d3/releases/download/v3.4.8/d3.zip -P /opt/ceres/resources/public/static/d3
 
 # unpack and remove archives
-cd /opt/ceres/resources/public/static/bootstrap/; unzip bootstrap-*.zip; mv bootstrap-3*/* ./; rm -rf bootstrap-3*; rm -f bootstrap-*.zip
+cd /opt/ceres/resources/public/static/bootstrap; unzip bootstrap-*.zip; rm -f bootstrap-*.zip;
+cd /opt/ceres/resources/public/static/d3; unzip d3*.zip; rm -f d3*.zip;
