@@ -1,7 +1,5 @@
 FROM ubuntu:latest
 
-ADD ./opt /opt
-
 # Update the APT cache
 RUN apt-get update
 
@@ -22,11 +20,17 @@ RUN chmod +x /usr/local/bin/lein
 ENV LEIN_ROOT yes
 RUN lein
 
+# add scripts
+ADD ./opt /opt
+
 # grab project
 RUN git clone https://github.com/kordano/ceres.git /opt/ceres
 
 # define port
 EXPOSE 8082
+
+# install deps locally
+RUN /opt/install-deps
 
 # create uberjar with leiningen
 RUN /opt/build-ceres
