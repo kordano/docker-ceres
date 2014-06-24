@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/build-ceres; java -jar /opt/ceres/target/ceres-standalone.jar /opt/server-config.edn
+java -jar /opt/ceres/target/ceres-standalone.jar /opt/server-config.edn
