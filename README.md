@@ -5,7 +5,7 @@ Dockerfile for ceres .
 
 Build it
 ```
-[sudo] docker build -rm -t <username>/ceres .
+[sudo] docker build --rm -t <username>/ceres .
 ```
 
 Install and run [dockerfile/mongodb](https://index.docker.io/u/dockerfile/mongodb/ "dockerfile/mongodb")
@@ -19,5 +19,5 @@ Fill in twitter credentials and other server configuration (e.g. port, build, ..
 
 Run it
 ```
-[sudo] docker run -t -i --link mongodb:db --name ceres -p 8082:8082 <username>/ceres
+[sudo] docker run -d --link mongodb:db --name ceres -p 8082:8082 <username>/ceres
 ```
