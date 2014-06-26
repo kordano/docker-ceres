@@ -5,7 +5,7 @@ Dockerfile for ceres .
 
 Build it
 ```
-[sudo] docker build --rm -t <username>/ceres .
+sudo docker build --rm -t <username>/ceres .
 ```
 
 Install and run [dockerfile/mongodb](https://index.docker.io/u/dockerfile/mongodb/ "dockerfile/mongodb")
