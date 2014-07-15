@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /opt/ceres; lein cljsbuild clean;lein cljsbuild once prod; lein clean; lein uberjar
+cd /opt/ceres; lein cljsbuild clean;lein cljsbuild once prod

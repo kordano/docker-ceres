@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar /opt/ceres/target/ceres-standalone.jar /opt/server-config.edn
+cd /opt/ceres; lein run /opt/server-config.edn
