@@ -9,7 +9,7 @@ RUN apt-get install -y curl git wget unzip
 # prepare for Java download
 RUN apt-get install -y software-properties-common
 RUN apt-get -y install openjdk-6-jre-headless
-RUN apt-get install -y mongodb-org-tools
+RUN apt-get install mongodb-clients
 ENV JAVA_HOME /usr/lib/jvm/java-6-openjdk-amd64
 
 # fix wget
